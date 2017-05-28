@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>name</name>
+        <value>columbia</value>
+        <description>name</description>
+    </property>
+    <property>
+        <name>high</name>
+        <value>173</value>
+        <description>High-cm</description>
+    </property>
+    <property>
+        <name>weight</name>
+        <value>50</value>
+        <final>true</final>
+        <description>Weight-kg</description>
+    </property>
+    <property>
+        <name>size-weight</name>
+        <value>${size},${weight}</value>
+        <description>Size and weight</description>
+    </property>
+</configuration>
