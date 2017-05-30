@@ -1,4 +1,5 @@
 package org.conan.myhadoop02.mr.chap05;
+// org.conan.myhadoop02.mr.chap05.ConfigurationPrinter
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
