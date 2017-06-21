@@ -30,6 +30,7 @@ public class JobBuilder {
         this.extrArgsUsage = extrArgsUsage;
         this.extrArgCount = extrArgCount;
         this.job = new Job();
+        this.job.setJarByClass(driverClass);
     }
 
     public static Job parseInputAndOutput(Tool tool, Configuration conf, String[] args) throws IOException {

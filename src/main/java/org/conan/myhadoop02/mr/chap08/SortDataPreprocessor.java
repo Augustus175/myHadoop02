@@ -1,11 +1,10 @@
 package org.conan.myhadoop02.mr.chap08;
-
+//org.conan.myhadoop02.mr.chap08.SortDataPreprocessor
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.compress.CompressionCodecFactory;
 import org.apache.hadoop.io.compress.GzipCodec;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -15,7 +14,6 @@ import org.apache.hadoop.util.ToolRunner;
 import org.conan.myhadoop02.mr.JobBuilder;
 import org.conan.myhadoop02.mr.chap05.v2.NcdcRecordParser;
 
-import javax.sound.midi.Sequence;
 import java.io.IOException;
 
 /**
