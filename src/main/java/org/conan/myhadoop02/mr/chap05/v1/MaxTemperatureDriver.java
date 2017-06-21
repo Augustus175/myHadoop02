@@ -1,5 +1,5 @@
 package org.conan.myhadoop02.mr.chap05.v1;
-
+//  org.conan.myhadoop02.mr.chap05.v1.MaxTemperatureDriver
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
