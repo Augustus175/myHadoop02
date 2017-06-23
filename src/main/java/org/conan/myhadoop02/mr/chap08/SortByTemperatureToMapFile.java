@@ -1,5 +1,5 @@
 package org.conan.myhadoop02.mr.chap08;
-
+//        org.conan.myhadoop02.mr.chap08.SortByTemperatureToMapFile
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.io.IntWritable;
