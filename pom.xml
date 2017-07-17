@@ -56,6 +56,15 @@
             <version>1.2.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.hbase/hbase-client -->
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>1.2.4</version>
+        </dependency>
+
+
+
         <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
         <dependency>
             <groupId>com.sun.jersey</groupId>

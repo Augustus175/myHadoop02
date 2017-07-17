@@ -1,5 +1,5 @@
 package org.conan.myhadoop02.mr.chap08;
-
+// org.conan.myhadoop02.mr.chap08.MaxTemperatureUsingSecondarySort
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Job;
