@@ -13,9 +13,10 @@ import java.io.IOException;
  * Created by zhangzhibo on 17-7-17.
  */
 public class ExampleClient {
+//    public static final boolean IBM_JAVA = JAVA_VENDOR_NAME.contains("IBM");
     public static void main(String[] args) throws IOException {
         Configuration conf = new Configuration();
-        conf.addResource("/usr/local/hbase/conf/hbase-site-cluster.xml");
+//        conf.addResource(System.getProperty("user.dir")+"/xml/hbase-site-cluster.xml");
         Configuration config = HBaseConfiguration.create(conf);
         HBaseAdmin admin = new HBaseAdmin(config);
         HTableDescriptor htd = new HTableDescriptor("test");
