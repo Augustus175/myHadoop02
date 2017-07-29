@@ -15,7 +15,7 @@ public class MaxTemperatureMapper extends Mapper<LongWritable,Text,Text,IntWrita
     @Override
     public void map(LongWritable key,Text value, Context context) throws IOException,InterruptedException{
         parser.parse(value);
-        if (parser.isValideTemperature()){
+        if (parser.isValidTemperature()){
             context.write(new Text(parser.getYear()),new IntWritable(parser.getAirTemperature()));
         }
     }

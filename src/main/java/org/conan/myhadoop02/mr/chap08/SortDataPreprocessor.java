@@ -26,7 +26,7 @@ public class SortDataPreprocessor extends Configured implements Tool {
         @Override
         protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
             parser.parse(value);
-            if (parser.isValideTemperature()) {
+            if (parser.isValidTemperature()) {
                 context.write(new IntWritable(parser.getAirTemperature()), value);
             }
         }

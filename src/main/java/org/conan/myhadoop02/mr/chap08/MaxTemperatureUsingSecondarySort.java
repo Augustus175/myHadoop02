@@ -24,7 +24,7 @@ public class MaxTemperatureUsingSecondarySort extends Configured implements Tool
         @Override
         protected void map(LongWritable keym, Text value, Context context) throws IOException, InterruptedException {
             parser.parse(value);
-            if (parser.isValideTemperature()) {
+            if (parser.isValidTemperature()) {
                 context.write(new IntPair(parser.getYearInt(), parser.getAirTemperature()), NullWritable.get());
             }
         }

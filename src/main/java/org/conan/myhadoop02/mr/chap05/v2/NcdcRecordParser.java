@@ -2,6 +2,11 @@ package org.conan.myhadoop02.mr.chap05.v2;
 
 import org.apache.hadoop.io.Text;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by zhangzhibo on 17-5-30.
  */
@@ -13,6 +18,12 @@ public class NcdcRecordParser {
     private String quality;
     private int StationID;
 
+    private String stationId;
+    private String observationDateString;
+    private boolean airTemperatureMalformed;
+
+    private static final DateFormat DATE_FORMAT =
+            new SimpleDateFormat("yyyyMMddHHmm");
     private String airTemperatureString;
 
 
@@ -33,7 +44,7 @@ public class NcdcRecordParser {
         parse(record.toString());
     }
 
-    public boolean isValideTemperature() {
+    public boolean isValidTemperature() {
         return airTemperature != MISSING_TEMPERATURE && quality.matches("[01459]");
     }
 
@@ -43,6 +54,15 @@ public class NcdcRecordParser {
 
     public int getYearInt() {
         return Integer.parseInt(this.year);
+    }
+
+    public Date getObservationDate() {
+        try {
+            System.out.println(observationDateString);
+            return DATE_FORMAT.parse(observationDateString);
+        } catch (ParseException e) {
+            throw new IllegalArgumentException(e);
+        }
     }
 
     public String getStationID() {

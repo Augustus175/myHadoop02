@@ -10,16 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../testconf" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../testconf" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
@@ -121,9 +111,10 @@
     <orderEntry type="library" name="Maven: org.apache.mina:mina-core:2.0.0-M5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ftpserver:ftpserver-core:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ftpserver:ftpserver-deprecated:1.0.0-M2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase:1.2.4" level="project" />
+    <orderEntry type="library" name="Maven: com.github.stephenc.findbugs:findbugs-annotations:1.3.9-1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-client:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-annotations:1.2.4" level="project" />
-    <orderEntry type="library" name="Maven: com.github.stephenc.findbugs:findbugs-annotations:1.3.9-1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-common:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-protocol:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
